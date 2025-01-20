@@ -1,0 +1,82 @@
+@font-face {
+    font-family: apple_bold;
+    src: url('../../assets/Fonts/SF-Apple/SF-Pro-Display-Heavy.otf');
+}
+
+@font-face {
+    font-family: inter;
+    src: url('../../assets/Fonts/Inter/Inter-Light.otf');
+}
+@font-face {
+    font-family: inter_dark;
+    src: url('../../assets/Fonts/Inter/Inter-Bold.otf');
+}
+
+@font-face {
+    font-family: apple_light;
+    src: url('../../assets/Fonts/SF-Apple/SF-Pro.ttf');
+}
+
+.menu_box_enlarge_2t69_tours{
+    margin-left: 162px;
+    border-radius: 10px;
+    height: fit-content;
+    width: fit-content;
+    border: 2px solid #efeff1;
+    background-color: #f6f6f8;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    position: absolute;
+}
+
+.main_container_391_{
+    display: flex;
+    flex-direction: column;
+}
+
+.title_container{
+    font-family: inter;
+    margin-top: 20px;
+    margin-left: 35px;
+    font-size: 26px;
+    /* color: red; */
+}
+
+.location_all_region{
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+    margin-top: 0px;
+}
+
+.heading_option_container{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    /* border: 2px solid black; */
+    padding: 20px;
+}
+
+.region_highlighter{
+    font-family: inter_dark;
+    /* font-weight: bolder; */
+    font-size: 18px;
+}
+
+.list_item_container{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-family: inter;
+    color: #515870;
+}
+
+.heading_option_container li>a:hover{
+    border-bottom: 2px solid #515870;
+}
+
+@media screen and (max-width: 1024px) {
+    
+    .hideOnResponsive{
+        display: none;
+    }
+}
