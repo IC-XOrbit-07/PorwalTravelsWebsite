@@ -1,5 +1,5 @@
 .navbar_container_6e98{
-    position: sticky;
+    background-color: #f6f6f8;
 
     display: flex;
     justify-content: flex-start;
@@ -8,8 +8,8 @@
     padding: 12px 32px;
     width: 100%;
     min-height: 4rem;
-    /* border: 1px solid black; */
     padding-left: 6vw;
+
 }
 
 /* .navbar_logo_132_h{

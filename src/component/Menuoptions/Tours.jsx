@@ -5,11 +5,6 @@ export default function Tours() {
   return (
     <div className='menu_box_enlarge_2t69_tours hideOnResponsive'>
         <div className="main_container_391_">
-
-            {/* <div className='title_container'>
-                TOURS
-            </div> */}
-
             <div className='location_all_region'>
                 {/* North */}
                 <div className='heading_option_container'> 

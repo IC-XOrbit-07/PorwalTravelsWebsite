@@ -2,6 +2,9 @@ import React, { useState } from "react";
 import "../Css/Navbar.css";
 import Tours from "./Menuoptions/Tours";
 import Offers from './Menuoptions/Offers';
+import Blogs from "./Menuoptions/Blogs";
+import Founders from "../component/Menuoptions/Founders"
+import ResponsiveMenuOptions from './ResponsiveMenuOption/ResponsiveTour'
 
 function Navbar() {
   const [hamburgerClicked, setHamburgerClicked] = useState(false);
@@ -98,7 +101,8 @@ function Navbar() {
 
           {/* Right Section (Search, Contact, etc.) */}
           <div className="navbar_options_right_o921">
-            <div className="flex justify-center align-baseline hamburger_option_responsive">
+            {/* Search Icon */}
+            {/* <div className="flex justify-center align-baseline hamburger_option_responsive">
               <svg
                 className="hover:cursor-pointer"
                 style={{ scale: "1" }}
@@ -111,13 +115,13 @@ function Navbar() {
               >
                 <path d="M 13 3 C 7.4889971 3 3 7.4889971 3 13 C 3 18.511003 7.4889971 23 13 23 C 15.396508 23 17.597385 22.148986 19.322266 20.736328 L 25.292969 26.707031 A 1.0001 1.0001 0 1 0 26.707031 25.292969 L 20.736328 19.322266 C 22.148986 17.597385 23 15.396508 23 13 C 23 7.4889971 18.511003 3 13 3 z M 13 5 C 17.430123 5 21 8.5698774 21 13 C 21 17.430123 17.430123 21 13 21 C 8.5698774 21 5 17.430123 5 13 C 5 8.5698774 8.5698774 5 13 5 z"></path>
               </svg>
-            </div>
+            </div> */}
 
             <button className="sales_button_ hamburger_option_responsive">
-              Book Now
+              Enquire Now
             </button>
 
-            <button className="contact_us_u827">Contact Us</button>
+            <button className="contact_us_u827" ><a href="https://www.linkedin.com/in/chinmay-porwal-945621270/" target="_blank">Contact Us</a></button>
 
             <div className="hamburger_icon" onClick={showHamburgerCrossSign}>
               {hamburgerClicked ? (
@@ -154,8 +158,14 @@ function Navbar() {
       {offersClicked && (
         <Offers/>
       )}
-      
-   
+
+      {blogsClicked && (<Blogs/>)}
+
+      {foundersClicked && (<Founders/>)}
+
+
+      {/* Responsive menu option display */}
+      {hamburgerClicked && (<ResponsiveMenuOptions/>)}
     </>
   );
 }

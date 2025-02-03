@@ -1,0 +1,21 @@
+
+.blogs_container_89y1{
+    margin-left: 162px;
+    border-radius: 10px;
+    height: fit-content;
+    width: fit-content;
+    border: 2px solid #efeff1;
+    background-color: #f6f6f8;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    position: absolute;
+    padding: 10px;
+    margin-right: 120px;
+    z-index: 1000;
+}
+
+@media screen and (max-width: 1024px) {
+    
+    .hideonresponsive{
+        display: none;
+    }
+}
