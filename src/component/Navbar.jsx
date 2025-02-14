@@ -5,7 +5,7 @@ import Offers from './Menuoptions/Offers';
 import Blogs from "./Menuoptions/Blogs";
 import Founders from "../component/Menuoptions/Founders"
 import MobileMenuDialogue from "./MobileMenuContainer/MobileMenuDialogue";
-import porwaltravelslogo from '../assets/Images/porwaltravelslogo.png'
+import porwaltravelslogo from '/assets/Images/porwaltravelslogo.png'
 import { Link } from "react-router-dom";
 
 function Navbar() {

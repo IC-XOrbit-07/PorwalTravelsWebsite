@@ -1,6 +1,6 @@
 import React from 'react'
 import '../../Css/MenuOptionCss/Offers.css'
-import offer_banner from '../../assets/Images/Offers.png'
+import offer_banner from '/assets/Images/Offers.png'
 
 function Offers() {
   return (

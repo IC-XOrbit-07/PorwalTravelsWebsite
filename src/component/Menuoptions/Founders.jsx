@@ -1,7 +1,7 @@
 import React from 'react'
 import '../../Css/MenuOptionCss/Founders.css'
-import dadaphoto from '../../assets/Images/Dada.jpg'
-import papaphoto from '../../assets/Images/papa.png'
+import dadaphoto from '/assets/Images/Dada.jpg'
+import papaphoto from '/assets/Images/Papa.png'
 
 export default function Founders() {
   return (

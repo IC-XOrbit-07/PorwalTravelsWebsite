@@ -1,10 +1,9 @@
 import React, { useState } from "react";
 import "../Css/Enquiry.css";
 import { useForm } from "react-hook-form";
-import { collection, addDoc, LoadBundleTask } from "firebase/firestore";
+import { collection, addDoc} from "firebase/firestore";
 import db  from "../firebaseConfig.js";
-import { span } from "framer-motion/client";
-// import Spinner from 'react-bootstrap/Spinner'
+
 
 function EnquirySection() {
 

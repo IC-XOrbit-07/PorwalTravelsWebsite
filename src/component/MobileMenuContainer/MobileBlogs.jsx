@@ -1,8 +1,8 @@
 import React from 'react'
 import '../../Css/MobileMenuCss/MobileBlogs.css'
-import blog_image_1 from '../../assets/Images/Adventure.png'
-import blog_image_2 from '../../assets/Images/Trek.png'
-import blog_image_3 from '../../assets/Images/Jungle.png'
+import blog_image_1 from '/assets/Images/Adventure.png'
+import blog_image_2 from '/assets/Images/Trek.png'
+import blog_image_3 from '/assets/Images/Jungle.png'
 
 function MobileBlogs() {
   return (

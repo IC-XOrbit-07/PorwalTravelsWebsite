@@ -1,6 +1,6 @@
 import React from 'react'
-import founder_image_1 from '../../assets/Images/Papa.png'
-import founder_image_2 from '../../assets/Images/Dada.jpg'
+import founder_image_1 from '/assets/Images/Papa.png'
+import founder_image_2 from '/assets/Images/Dada.jpg'
 import '../../Css/MobileMenuCss/MobileFounder.css'
 
 function MobileFounders() {
