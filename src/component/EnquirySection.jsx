@@ -1,18 +1,40 @@
-import React from "react";
+import React, { useState } from "react";
 import "../Css/Enquiry.css";
 import { useForm } from "react-hook-form";
-import imagesetter from "../assets/Images/enquire.jpg";
+import { collection, addDoc, LoadBundleTask } from "firebase/firestore";
+import db  from "../firebaseConfig.js";
+import { span } from "framer-motion/client";
+// import Spinner from 'react-bootstrap/Spinner'
 
 function EnquirySection() {
+
+  const [loaderShow , setloaderShow] = useState(false);
+
   const {
     register,
     handleSubmit,
     formState: { errors },
   } = useForm();
 
-  const onSubmit = (data) => {
-    console.log(data);
+  const onSubmit = async (data) => {
+    try {
+      setloaderShow(true);
+      const docRef = await addDoc(collection(db, "enquiries"), {
+        name: data.name,
+        email: data.email,
+        contact: data.contactnumber,
+        description: data.description,
+        timestamp: new Date().toISOString(),
+      });
+      alert(`We have received your response , we will contact you soon !!!`);
+    } catch (error) {
+      console.error("Error adding document: ", error);
+      alert("Failed to save data.");
+    }
+    setloaderShow(false);
+
   };
+
 
   return (
     <>
@@ -83,17 +105,28 @@ function EnquirySection() {
               placeholder="Describe what you're looking for your next destination."
             ></textarea>
             {errors.description && (
-              <span style={{ color: "white", marginLeft: "10px"}}>
+              <span style={{ color: "white", marginLeft: "10px" }}>
                 This field is required
               </span>
             )}
 
-            <button
-              type="submit"
-              className="submit_button_style flex justify-center mb-4 p-4 rounded-2xl w-auto px-8 font-bold mt-4"
-            >
-              Send Enquiry
-            </button>
+            {loaderShow ? (
+              <button
+                type="submit"
+                style={{backgroundColor:'grey'}}
+                className="submit_button_style flex justify-center mb-4 p-4 rounded-2xl w-auto px-8 font-bold mt-4"
+                disabled
+              >
+                Sending...
+              </button>
+            ) : (
+              <button
+                type="submit"
+                className="submit_button_style flex justify-center mb-4 p-4 rounded-2xl w-auto px-8 font-bold mt-4"
+              >
+                Submit
+              </button>
+            )}
           </form>
         </div>
       </div>

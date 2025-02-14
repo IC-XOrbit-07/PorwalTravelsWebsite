@@ -1,0 +1,28 @@
+@font-face {
+    font-family: inter;
+    src: url('../../assets/Fonts/Inter/Inter-Light.otf');
+}
+
+@font-face {
+    font-family: inter_dark;
+    src: url('../../assets/Fonts/Inter/Inter-Bold.otf');
+}
+
+@font-face {
+    font-family: poppins;
+    src: url('../../assets/Fonts/Poppins/Poppins-SemiBold.ttf');
+}
+
+
+.mobile_menu_tours_div_843w{
+    margin-top: 10px;
+    margin-bottom: -10px;
+    margin-left: 10px;
+    padding-left: 10px;
+    border-radius: 6px;
+    background-color: #f2f5f7;
+}
+
+.state_name_tour{
+    font-family: poppins;
+}

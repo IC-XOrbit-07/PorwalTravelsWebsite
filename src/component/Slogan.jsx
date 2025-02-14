@@ -21,7 +21,7 @@ function Slogan() {
       <div className='flex flex-col justify-center gap-2 align-center our_partner'>
        <div className='flex justify-center our_features_text text-4xl text-slate-500'>Our Partners</div>
        <div className='scale-50 scroll_img_prop w-auto'>
-        <marquee behavior="" direction="" scrollAmount="5" width="100%">
+        <marquee behavior="" direction="" width="100%">
           <div className='flex gap-16'>
             <img className='img_background_target' src={kesariLogo} alt="" />
             <img className='img_background_target' src={CoxKingsLogo} alt="" />
@@ -37,9 +37,8 @@ function Slogan() {
         <iframe 
           className="rounded-xl m-16 md:m-18 xl:m-20 video_show" 
           src="https://www.youtube.com/embed/6KL2QZ91kAM?controls=0&autohide=1&showinfo=0&rel=0&modestbranding=0&fs=0&iv_load_policy=3&autoplay=1&mute=1&start=0" 
-          frameborder="0" 
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-          allowfullscreen>
+          frameBorder="0" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture">
         </iframe>
       </div>
 

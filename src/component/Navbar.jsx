@@ -4,9 +4,19 @@ import Tours from "./Menuoptions/Tours";
 import Offers from './Menuoptions/Offers';
 import Blogs from "./Menuoptions/Blogs";
 import Founders from "../component/Menuoptions/Founders"
-import ResponsiveMenuOptions from './ResponsiveMenuOption/ResponsiveTour'
+import MobileMenuDialogue from "./MobileMenuContainer/MobileMenuDialogue";
+import porwaltravelslogo from '../assets/Images/porwaltravelslogo.png'
+import { Link } from "react-router-dom";
 
 function Navbar() {
+  // Disabling scroll on hamburger is set to true
+  let disableScroll = ()=>{
+    document.body.style.overflow='hidden';
+  }
+
+  let enableScroll = ()=>{
+    document.body.style.overflow='auto';
+  }
   const [hamburgerClicked, setHamburgerClicked] = useState(false);
 
   // Click state for toggling chevron direction
@@ -18,6 +28,16 @@ function Navbar() {
   // Toggle hamburger menu visibility
   const showHamburgerCrossSign = () => {
     setHamburgerClicked(!hamburgerClicked);
+  };
+
+  const dragToEnquireForm = ()=>{
+    // const scrollPosition = 1200;
+
+    // Smooth scrolling to the specified scroll position
+    window.scrollTo({
+      top: 830, // Position you want to scroll to
+      behavior: "smooth", // Enables smooth scrolling
+    });
   };
 
   // Handle click to toggle SVG direction
@@ -51,7 +71,11 @@ function Navbar() {
     <>
       <div className="navbar_container_6e98">
         {/* Logo Section */}
-        <div className="navbar_logo_132_h">Icon</div>
+        <div className="navbar_logo_132_h">
+          <Link to="/">
+            <img src={porwaltravelslogo} alt="" />
+          </Link>
+        </div>
 
         {/* Options Section */}
         <div className="navbar_options_container_e189_">
@@ -60,7 +84,7 @@ function Navbar() {
             {topMenuOptions.map((item) => (
               <div
                 key={item}
-                onClick={() => handleClick(item)}  // Click to toggle SVG direction
+                onClick={() => handleClick(item)} // Click to toggle SVG direction
                 className="cursor-pointer menu_options_container hamburger_option_responsive"
                 style={{ padding: ".5rem 1rem", borderRadius: "5px" }}
               >
@@ -73,12 +97,14 @@ function Navbar() {
                     width="16"
                     height="16"
                     fill="currentColor"
-                    className={`bi bi-chevron-${(item === "Tours" && toursClicked) ||
-                    (item === "Offers" && offersClicked) ||
-                    (item === "Blogs" && blogsClicked) ||
-                    (item === "Founders" && foundersClicked)
-                      ? "up"
-                      : "down"}`}
+                    className={`bi bi-chevron-${
+                      (item === "Tours" && toursClicked) ||
+                      (item === "Offers" && offersClicked) ||
+                      (item === "Blogs" && blogsClicked) ||
+                      (item === "Founders" && foundersClicked)
+                        ? "up"
+                        : "down"
+                    }`}
                     viewBox="0 0 16 16"
                     style={{ scale: ".6", marginTop: "5px" }}
                   >
@@ -118,10 +144,19 @@ function Navbar() {
             </div> */}
 
             <button className="sales_button_ hamburger_option_responsive">
-              Enquire Now
+              <a
+                href="https://www.linkedin.com/in/chinmay-porwal-945621270/"
+                target="_blank"
+              >
+                Contact Developer
+              </a>
             </button>
 
-            <button className="contact_us_u827" ><a href="https://www.linkedin.com/in/chinmay-porwal-945621270/" target="_blank">Contact Us</a></button>
+            <button className="contact_us_u827">
+              <a href="https://wa.me/9829779499" target="_blank">
+                Contact Us
+              </a>
+            </button>
 
             <div className="hamburger_icon" onClick={showHamburgerCrossSign}>
               {hamburgerClicked ? (
@@ -151,21 +186,20 @@ function Navbar() {
       </div>
 
       {/* Dynamic hover box */}
-      {toursClicked && (
-        <Tours/>
-      )}
-      
-      {offersClicked && (
-        <Offers/>
-      )}
+      {toursClicked && <Tours />}
 
-      {blogsClicked && (<Blogs/>)}
+      {offersClicked && <Offers />}
 
-      {foundersClicked && (<Founders/>)}
+      {blogsClicked && <Blogs />}
 
+      {foundersClicked && <Founders />}
 
       {/* Responsive menu option display */}
-      {hamburgerClicked && (<ResponsiveMenuOptions/>)}
+      {hamburgerClicked && <MobileMenuDialogue />}
+
+      {hamburgerClicked && disableScroll()}
+
+      {!hamburgerClicked && enableScroll()}
     </>
   );
 }

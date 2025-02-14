@@ -1,0 +1,57 @@
+@font-face {
+    font-family: inter;
+    src: url('../../assets/Fonts/Inter/Inter-Light.otf');
+}
+@font-face {
+    font-family: inter_dark;
+    src: url('../../assets/Fonts/Inter/Inter-Bold.otf');
+}
+
+@font-face {
+    font-family: poppins;
+    src: url('../../assets/Fonts/Poppins/Poppins-Light.ttf');
+}
+
+
+#mobile_menu_container{
+    position: fixed;
+    top: 17vh;
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+    /* padding-bottom: 20px; */ 
+    background-color: #f6f6f8;
+    z-index: 10000;
+    color: #353949;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+    overflow: scroll;
+    height: max-content;   
+    overflow: scroll;
+    /* border: 2px solid black; */
+}
+
+.tours_container{
+    /* border: 1px solid black; */
+    font-family: inter_dark;
+    padding: 10px;
+}
+
+.menu_name_tours{
+    font-size: 18px;
+    font-weight: bolder;
+    /* border-bottom: 5px solid coral; */
+    /* position: absolute; */
+}
+
+.menu_name_tours:hover a{
+    border-bottom: 2px solid #353949;
+}
+
+
+@media screen and (min-width:1025px) {
+    #mobile_menu_container{
+        display: none;
+    }
+}

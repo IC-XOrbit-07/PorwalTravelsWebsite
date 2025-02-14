@@ -12,9 +12,9 @@
 
 }
 
-/* .navbar_logo_132_h{
-
-} */
+.navbar_logo_132_h{
+    scale: 1.3;
+}
 
 .navbar_options_container_e189_{
     width: 100vw;
@@ -104,11 +104,21 @@
     .hamburger_icon{
         display: block;
         transition: transform 3s ease;
+        margin-right: -10px;
     }
     .hamburger_option_responsive{
         display: none;
     }
     .navbar_options_right_o921{
         margin-right: 0vw;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .navbar_logo_132_h{
+        padding-left: 10px;
+        scale: 2;
+        margin-top: 10px;
+        margin-left: 10px;
     }
 }

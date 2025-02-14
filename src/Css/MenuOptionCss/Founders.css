@@ -28,6 +28,7 @@
     width: 200px;
     background-color: #515870;
     border-radius: 10px;
+    object-fit: fill;
 }
 
 .name_founder{
