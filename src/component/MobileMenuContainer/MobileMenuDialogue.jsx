@@ -70,8 +70,9 @@ function MobileMenuDialogue() {
       </button>
 
       <p className="mt-6 text-center" style={{ padding: "10px" }}>
-        This website is made by Chinmay Porwal, completely crafted in India with
-        pride and love ❤️
+        Shop No - 4 Bhadu Shakari Samiti Pur Road , Bhilwara , Rajasthan , India 
+        9829779499 - Ram Prakash Porwal
+        9950874991 - Ajay Kumar Porwal
       </p>
     </div>
   );

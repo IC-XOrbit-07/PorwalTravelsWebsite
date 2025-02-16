@@ -39,11 +39,11 @@ function Slogan() {
                 src="/assets/Images/Kesari.png"
                 alt=""
               />
-              <img
+              {/* <img
                 className="img_background_target"
                 src="/assets/Images/Cox&KingsLogo.png"
                 alt=""
-              />
+              /> */}
               <img
                 className="img_background_target"
                 src="/assets/Images/FlexiholLogo.png"
