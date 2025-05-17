@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+@font-face {
+    font-family: inter;
+    src: url('../assets/Fonts/Inter/Inter-Light.otf');
+}
+
+.Announcement_Banner_JS892{
+    font-family: inter;
+    font-size: 13px;
+    padding: 13px 6.5px;
+    font-weight: bold;
+    color: white;
+    letter-spacing: .7px;
+    display: block;
+}
+
+.Announcement_Banner_JS892 a:hover{
+    color: #FF9800;
+}

@@ -1,0 +1,124 @@
+.navbar_container_6e98{
+    background-color: #f6f6f8;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 40px;
+    padding: 12px 32px;
+    width: 100%;
+    min-height: 4rem;
+    padding-left: 6vw;
+
+}
+
+.navbar_logo_132_h{
+    scale: 1.3;
+}
+
+.navbar_options_container_e189_{
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.navabar_options_left_g162{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+.menuoption{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+}
+
+/* eeeef0 */
+
+/* .menu_options_container:hover svg {
+
+  transform: rotate(180deg);
+  transition: transform .3s ease;
+} */
+
+.menu_options_container:hover{
+    background-color: #eeeef0;
+}
+
+
+
+
+.navbar_options_right_o921{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;   
+    gap: 20px; 
+    margin-right: 6vw;
+}
+
+/*  Button classes border color :- #fdada5 , #1e1011 */
+
+.sales_button_{
+    border: 1px solid #000000;
+    padding: 8px;
+    border-radius: 5px;
+    font-weight: 500;
+}
+.sales_button_:hover{
+    background-color: #f2f2f5;
+}
+
+
+.contact_us_u827{
+    padding: 8px;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+    font-weight: 500;
+}
+
+.hamburger_icon{
+    display: none;
+}
+
+.menu_box_enlarge_2t69_tours{
+    background-color: red;
+    margin-left: 160px;
+    border-radius: 10px;
+    height: fit-content;
+    width: fit-content;
+    border: 2px solid #efeff1;
+    background-color: #f6f6f8;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+
+@media screen and (max-width: 1024px) {
+    
+    .hamburger_icon{
+        display: block;
+        transition: transform 3s ease;
+        margin-right: -10px;
+    }
+    .hamburger_option_responsive{
+        display: none;
+    }
+    .navbar_options_right_o921{
+        margin-right: 0vw;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .navbar_logo_132_h{
+        padding-left: 10px;
+        scale: 2;
+        margin-top: 10px;
+        margin-left: 10px;
+    }
+}

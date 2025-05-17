@@ -1,0 +1,20 @@
+@font-face {
+    font-family: inter;
+    src: url('../../assets/Fonts/Inter/Inter-Light.otf');
+}
+
+@font-face {
+    font-family: inter_dark;
+    src: url('../../assets/Fonts/Inter/Inter-Bold.otf');
+}
+
+@font-face {
+    font-family: poppins_dark;
+    src: url('../../assets/Fonts/Poppins/Poppins-Bold.ttf');
+}
+
+.font_styler_founders{
+    font-family: poppins;
+    font-weight: bold;
+    margin-top: 20px;
+}
