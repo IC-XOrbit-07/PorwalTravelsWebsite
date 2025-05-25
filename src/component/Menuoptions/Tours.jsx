@@ -18,7 +18,7 @@ export default function Tours() {
                         <li><a href="#">Uttar Pradesh</a></li>
                         {/* <li><a href="#">Options</a></li> */}
                     </ul>
-                </div>
+                </div>  
                 {/* North east */}
                 <div className='heading_option_container'> 
                     <h4 className='region_highlighter'>North East</h4>

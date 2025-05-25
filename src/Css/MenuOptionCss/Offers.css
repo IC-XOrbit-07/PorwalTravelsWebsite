@@ -8,8 +8,8 @@
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     position: absolute;
     padding: 20px;
-    display: flex;
-    gap: 15px;
+    /* display: flex; */
+    /* gap: 15px; */
 }
 
 .first_col{
