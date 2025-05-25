@@ -4,7 +4,7 @@ import '../Css/AnnouncementBanner.css'
 function AnnouncementBanner() {
   return (
     <div className='bg-black Announcement_Banner_JS892 text-center'>
-        <a className='hover:cursor-pointer pr-4 ml-4'>Experience the pleasure of tours with Porwal Travels - Book Your Spot Now</a>
+      <a className='hover:cursor-pointer pr-4 ml-4'>Salute to all our brave soldier who operated Operation <span style={{ color: "red" }}>Sindoor</span> 🇮🇳 🪖</a>
     </div>
   )
 }
