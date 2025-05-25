@@ -11,6 +11,7 @@ import "../src/Css/Body.css";
 
 
 import { BrowserRouter , Routes, Route } from "react-router-dom";
+import StateDescription from "./component/StateDescription";
 
 
 function App() {
@@ -39,6 +40,8 @@ function App() {
             </>
           }
           />
+
+          <Route path="/region/:name" element={<StateDescription/>} />
           
           <Route path="/mobileblogs" element={
             <>
