@@ -24,7 +24,7 @@ function StateDescription() {
                     Welcome to, {name}
                     <div>
                         <button className='text-2xl mt-5 border border-grey rounded-full p-2 px-4 ' onClick={()=>{}}>
-                            <a href="https://www.tourism.rajasthan.gov.in/">
+                            <a href="https://www.tourism.rajasthan.gov.in/" target='_blank'>
                                 <ShinyText text="Explore" disabled={false} speed={3} className='custom-class'/>
                             </a>
                         </button>
