@@ -1,11 +1,14 @@
 import React from 'react'
 import '../../Css/MobileMenuCss/MobileTours.css'
+import { Link } from 'react-router-dom';
+
 function MobileTours() {
   return (
     <div
       className="container mx-auto px-4"
       style={{ height: "80vh", overflow: "scroll" }}
     >
+      <h1 className='ml-3 mt-8 font-bold bg-red-600 p-2 text-white rounded-lg'>Rajasthan link is the only one working</h1>
       <div className="flex flex-wrap -mx-2">
         <div
           className="mt-8 ml-3 w-5/12 sm:w-5/12 lg:w-5/12"
@@ -105,7 +108,7 @@ function MobileTours() {
             className="ml-4 mt-2 list-none flex gap-1.5 flex-col"
             style={{ color: "#515870" }}
           >
-            <li>Rajasthan</li>
+            <li><Link to="/region/Rajasthan">Rajasthan</Link></li>
             <li>Gujarat</li>
             <li>Maharashtra</li>
             <li>Goa</li>
