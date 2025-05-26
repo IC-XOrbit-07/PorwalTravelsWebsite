@@ -1,6 +1,6 @@
 import React from 'react'
 import { useParams } from 'react-router-dom'
-import SplitText from '../Reactbits/Splittext';
+// import SplitText from '../Reactbits/Splittext';
 import ShinyText from '../Reactbits/ShinyText';
 
 import raj_intro_image from '../Rajasthan Tourism/Rajasthan_Intro.jpg'
