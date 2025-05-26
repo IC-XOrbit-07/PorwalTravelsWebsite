@@ -55,7 +55,7 @@ function StateDescription() {
                         animationStagger={0.08}
                         easeType="elastic.out(1, 0.5)"
                         transformStyles={transformStyles}
-                        enableHover={false}
+                        enableHover={true}
                     />
                 </div>
             </div>
