@@ -2,15 +2,15 @@ import React from 'react'
 import { useParams } from 'react-router-dom'
 import BounceCards from '../Reactbits/BounceCards';
 
-import raj_intro_image from '../Rajasthan Tourism/Rajasthan_Intro.jpg'
+import raj_intro_image from '../Reactbits/RajasthanPhoto/Intro.jpg'
 
-const images = [
-    "https://picsum.photos/400/400?grayscale",
-    "https://picsum.photos/500/500?grayscale",
-    "https://picsum.photos/600/600?grayscale",
-    "https://picsum.photos/700/700?grayscale",
-    "https://picsum.photos/300/300?grayscale"
-];
+import image1 from '../Reactbits/RajasthanPhoto/1.jpg'
+import image2 from '../Reactbits/RajasthanPhoto/2.jpg'
+import image3 from '../Reactbits/RajasthanPhoto/3.jpg'
+import image4 from '../Reactbits/RajasthanPhoto/4.jpg'
+import image5 from '../Reactbits/RajasthanPhoto/5.jpg'
+
+const images = [image1,image2,image3,image4,image5];
 
 const transformStyles = [
     "rotate(5deg) translate(-150px)",
